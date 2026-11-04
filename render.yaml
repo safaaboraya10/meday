@@ -1,0 +1,25 @@
+# Render Blueprint for the MeDay backend (FastAPI, free plan).
+# Databases are not committed: the build rebuilds chatbot.db from the Excel
+# file, and main.py creates appointments.db + the admin user on startup.
+# The free plan's disk is temporary, so data added on the live site resets
+# whenever the service restarts or redeploys.
+services:
+  - type: web
+    name: meday-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python import_meday_data.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /docs
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
