@@ -47,6 +47,22 @@ appointments, employees and shifts, customers, and the website's content.
 - ✏️ **Content management**: edit category pages and import the chatbot knowledge base from Excel
 - 🗓️ **Secretary page** for managing appointments
 
+## Screenshots
+
+![Home page](docs/screenshots/home.jpg)
+
+### Admin area
+
+> Shown with demo data. Admin access to the live demo is available on request.
+
+| Admin dashboard | Appointments calendar |
+|---|---|
+| ![Admin dashboard](docs/screenshots/admin-dashboard.jpg) | ![Appointments calendar](docs/screenshots/admin-appointments.jpg) |
+| **Employee management** | **Weekly shift planning** |
+| ![Employee management](docs/screenshots/admin-employees.jpg) | ![Weekly shift planning](docs/screenshots/admin-shifts.jpg) |
+| **Customer management** | **Website content management** |
+| ![Customer management](docs/screenshots/admin-customers.jpg) | ![Website content management](docs/screenshots/admin-content.jpg) |
+
 ## How the AI assistant works
 
 1. **Gemini** reads the client's message and detects the intent (a question, a treatment, a concern…).
