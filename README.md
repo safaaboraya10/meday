@@ -18,6 +18,10 @@
   <img alt="Gemini" src="https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white" />
 </p>
 
+<p align="center">
+  <a href="https://meday-swart.vercel.app"><b>🌐 Live Demo</b></a>
+</p>
+
 ---
 
 ## Overview
